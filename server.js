@@ -11,7 +11,7 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 // ── Middleware ───────────────────────────────────────────────
-app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
+app.use(cors()); // Allow all origins
 app.use(express.json());
 
 // Raw body needed for Stripe webhook signature verification
