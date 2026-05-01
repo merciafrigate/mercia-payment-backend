@@ -101,7 +101,7 @@ async function sendConfirmationEmail({ deckName, email, purpose, amount, referen
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from:    'Mercia Chapter <payments@resend.dev>',
+        from:    'Mercia Chapter <payments@merciafingers.co.uk>',
         to:      [email],
         subject: `✓ Payment Confirmed — ${amountFormatted} | Ref: ${reference}`,
         html:    html
